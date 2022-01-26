@@ -4,11 +4,11 @@ import SideBar from '../SideBar/SideBar';
 
 const Banner = () => {
     return (
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-8 py-4">
-            <div className="col-span-2">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 px-8 py-4">
+            <div className="col-span-2 mb-4 md:mb-0 md:mr-4">
                 <Carousel />
             </div>
-            <div>
+            <div className="col-span-1">
                 <SideBar />
             </div>
         </div>

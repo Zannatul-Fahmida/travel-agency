@@ -1,0 +1,16 @@
+.sidebar-img-bg1{
+    background-image: url('../../../images/pexels-borislav-krustev-225203.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sidebar-img{
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 90px 0;
+}
+.sidebar-img-bg2{
+    background-image: url('../../../images/pexels-pixabay-460672.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
