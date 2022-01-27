@@ -5,6 +5,7 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { faBars, faTimes, faPlane, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import useAuth from '../../../hooks/useAuth';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const { user, logOut, admin } = useAuth();
@@ -40,22 +41,14 @@ const Navbar = () => {
                     >
                       Home
                     </Link>
-                    <Link
-                      to="/"
+                    <HashLink
+                      to="#blogs"
                       onClick={() => setActive("blogs")}
                       className={active === "blogs" ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'}
                       aria-current={active === "blogs" ? 'page' : undefined}
                     >
                       Blogs
-                    </Link>
-                    <Link
-                      to="/home"
-                      onClick={() => setActive("reviews")}
-                      className={active === "reviews" ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'}
-                      aria-current={active === "reviews" ? 'page' : undefined}
-                    >
-                      Reviews
-                    </Link>
+                    </HashLink>
                   </div>
                 </div>
               </div>

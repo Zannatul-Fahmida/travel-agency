@@ -9,7 +9,7 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
     })
     return (
-        <div className="container mx-auto px-8 my-6">
+        <div id="blogs" className="container mx-auto px-8 my-6">
             <h2 className="text-3xl font-bold text-gray-900 my-4">Blogs</h2>
             <div className="grid gap-4 grid-cols-3">
                 {
