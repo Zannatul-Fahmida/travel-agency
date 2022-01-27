@@ -16,6 +16,12 @@ const SideBar = () => {
                     <p>Top Rated Place</p>
                 </div>
             </div>
+            <div className="sidebar-img-bg3 mt-4">
+                <div className="sidebar-img">
+                    <h5 className="text-5xl font-bold mb-1">Dubai</h5>
+                    <p>Most Visited City</p>
+                </div>
+            </div>
         </div>
     );
 };
