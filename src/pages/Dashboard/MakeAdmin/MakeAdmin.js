@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://frozen-hollows-26442.herokuapp.com/users/admin', {
+        fetch('https://quiet-ridge-68466.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -28,7 +28,7 @@ const MakeAdmin = () => {
         <div className="flex flex-col items-center w-full">
             <h2 className="text-3xl font-bold my-3">Make An Admin</h2>
             <form onSubmit={handleAdminSubmit} className="w-1/3">
-            <div>
+                <div>
                     <label htmlFor="admin" className="sr-only">
                         Admin
                     </label>
@@ -51,7 +51,7 @@ const MakeAdmin = () => {
                         Make Admin
                     </button>
                 </div>
-                {success && <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">Make an admin successfully!</div>}
+                {success && <div className="bg-green-100 rounded-lg py-5 px-6 mt-3 text-base text-green-700" role="alert">Make an admin successfully!</div>}
             </form>
         </div>
     );

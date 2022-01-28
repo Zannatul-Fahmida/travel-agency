@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './pages/Dashboard/DashboardHome/DashboardHome';
 import MakeAdmin from './pages/Dashboard/MakeAdmin/MakeAdmin';
 import ViewProfile from './pages/Dashboard/ViewProfile/ViewProfile';
+import ArticleDetails from './pages/Home/ArticleDetails/ArticleDetails';
 import BlogDetails from './pages/Home/BlogDetails/BlogDetails';
 import Home from './pages/Home/Home/Home';
 import Navbar from './pages/Shared/Navbar/Navbar';
@@ -28,6 +29,7 @@ function App() {
             <Route path="signUp" element={<SignUp />} />
             <Route path="viewProfile" element={<PrivateRoute><ViewProfile /></PrivateRoute>} />
             <Route path="/blogs/:blogId" element={<PrivateRoute><BlogDetails /></PrivateRoute>} />
+            <Route path="/articles/:articlesId" element={<PrivateRoute><ArticleDetails /></PrivateRoute>} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
               <Route exact path="/dashboard" element={<DashboardHome />} />
               <Route path="/dashboard/addBlogs" element={<AddBlogs />} />

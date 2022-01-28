@@ -93,12 +93,12 @@ const SignIn = () => {
             </button>
           </div>
           {
-            user?.email && <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
+            user?.email && <div className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
               User created successfully!
             </div>
           }
           {
-            authError && <div class="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">
+            authError && <div className="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">
               {authError}
             </div>
           }

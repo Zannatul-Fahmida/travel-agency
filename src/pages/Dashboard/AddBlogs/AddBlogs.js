@@ -41,7 +41,7 @@ const AddBlogs = () => {
     return (
         <div className="flex flex-col items-center w-full">
             <h2 className="text-3xl font-bold my-3">Add Blogs</h2>
-            <form onSubmit={handleAddBlog} className="w-1/3">
+            <form onSubmit={handleAddBlog} className="md:w-1/3">
                 <div>
                     <label htmlFor="title" className="sr-only">
                         Title
@@ -170,7 +170,7 @@ const AddBlogs = () => {
                         Add Blog
                     </button>
                 </div>
-                {success && <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">Add a new blog successfully!</div>}
+                {success && <div className="bg-green-100 rounded-lg py-5 px-6 mt-3 text-base text-green-700" role="alert">Add a new blog successfully!</div>}
             </form>
         </div>
     );
